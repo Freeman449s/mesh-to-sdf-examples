@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ed6abcb-642a-4cb1-9349-0d29cad1a2fe" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.mesh-to-sdf-examples/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.mesh-to-sdf-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_plastic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_rubber.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_plastic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_rubber.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Mask_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Mask_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_plastic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_rubber.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_plastic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_rubber.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_mask.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_mask.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_monitors.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_monitors.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Lens.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Lens.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Sclera.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Sclera.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_blades.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_blades.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_matte.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_matte.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_smoother.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_smoother.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/SDF deform.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/SDF deform.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/HDRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/HDRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFX/SDF Render Texture vfx collide.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/SDF Render Texture vfx collide.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-collide.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-collide.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-follow.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-follow.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collections@1.4.0/DocCodeSamples.Tests/CollectionsAllocationExamples.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TyQTJqiXXoAGmv4lUIlUkyXGeM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Administrator\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="附加到 Unity 编辑器.附加到 Unity 编辑器">
+    <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\UnityEditor\2023.1.7f1c1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath E:\Projects\Unity\mesh-to-sdf-examples -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="E:\Projects\Unity\mesh-to-sdf-examples" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="单元测试(批处理模式)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\UnityEditor\2023.1.7f1c1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath E:\Projects\Unity\mesh-to-sdf-examples -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="E:\Projects\Unity\mesh-to-sdf-examples" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="附加到 Unity 编辑器" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="附加到 Unity 编辑器并运行" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2ed6abcb-642a-4cb1-9349-0d29cad1a2fe" name="更改" comment="" />
+      <created>1692012847135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692012847135</updated>
+      <workItem from="1692012848189" duration="1001000" />
+      <workItem from="1692068797702" duration="4648000" />
+      <workItem from="1692078364385" duration="22000" />
+      <workItem from="1692078569756" duration="7986000" />
+      <workItem from="1692104889469" duration="869000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
