@@ -640,6 +640,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 394792399}
+    - targetCorrespondingSourceObject: {fileID: -1537223665051917193, guid: f9f576f910be93947857c30992c416b7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 394792404}
   m_SourcePrefab: {fileID: 100100000, guid: f9f576f910be93947857c30992c416b7, type: 3}
 --- !u!1 &394792396 stripped
 GameObject:
@@ -682,7 +686,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394792397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7f34bde58152514d8cf7e7b2e7cc7dc, type: 3}
   m_Name: 
@@ -695,12 +699,50 @@ MonoBehaviour:
   m_Offset: -0.03
   m_UpdateMode: 0
   m_Compute: {fileID: 7200000, guid: 21a034c7a3ab6be46873a82e0d02ec7b, type: 3}
+  m_SkinnedMeshRenderer: {fileID: 0}
+  m_MeshFilter: {fileID: 0}
+  m_InitializeKernel: -1
+  m_SplatTriangleDistancesSignedKernel: -1
+  m_SplatTriangleDistancesUnsignedKernel: -1
+  m_FinalizeKernel: -1
+  m_LinearFloodStepKernel: -1
+  m_LinearFloodStepUltraQualityKernel: -1
+  m_JumpFloodInitialize: -1
+  m_JumpFloodStep: -1
+  m_JumpFloodStepUltraQuality: -1
+  m_JumpFloodFinalize: -1
+  m_BufferToTextureCalcGradient: -1
+  m_VertexBufferStride: 0
+  m_VertexBufferPosAttributeOffset: 0
+  m_IndexFormat: 0
+  m_ThreadGroupCountTriangles: 0
+  m_Initialized: 0
 --- !u!4 &394792400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6289947803871073071, guid: f9f576f910be93947857c30992c416b7,
     type: 3}
   m_PrefabInstance: {fileID: 394792395}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &394792404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394792397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ab57deabc75fb41a1070c47aefb2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SDFTexture: {fileID: 1676366826}
+  m_FloodMode: 0
+  m_FloodFillQuality: 1
+  m_FloodFillIterations: 8
+  m_DistanceMode: 0
+  m_Offset: -0.03
+  m_UpdateMode: 0
+  m_Compute: {fileID: 7200000, guid: 9d6f3a4c76d2a19418084b9a44b56534, type: 3}
 --- !u!1 &510549995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,6 +2492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676366825}
   - component: {fileID: 1676366824}
+  - component: {fileID: 1676366826}
   m_Layer: 0
   m_Name: SDFTexture
   m_TagString: Untagged
@@ -2464,7 +2507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676366823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8dd008eddf8fb24190dd13afed8fa97, type: 3}
   m_Name: 
@@ -2472,6 +2515,8 @@ MonoBehaviour:
   m_SDF: {fileID: 8400000, guid: 186a9b0db03d8364a955d968347a1cc3, type: 2}
   m_Size: {x: 0.88, y: 1.9, z: 1.03}
   m_Resolution: 64
+  kMaxResolution: 2048
+  kMaxVoxelCount: 536870912
 --- !u!4 &1676366825
 Transform:
   m_ObjectHideFlags: 0
@@ -2487,6 +2532,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676366826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676366823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbcb1325353b3547b2fc64ebb567137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SDF: {fileID: 8400000, guid: 186a9b0db03d8364a955d968347a1cc3, type: 2}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Resolution: 64
 --- !u!1 &1717973621
 GameObject:
   m_ObjectHideFlags: 0

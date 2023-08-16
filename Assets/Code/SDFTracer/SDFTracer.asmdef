@@ -1,7 +1,7 @@
 {
     "name": "SDFTracer",
     "references": [
-        "Unity.DemoTeam.MeshToSDF"
+        "MeshToSDF"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

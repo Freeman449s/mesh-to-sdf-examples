@@ -2,7 +2,7 @@
     "name": "SDFDeform",
     "rootNamespace": "",
     "references": [
-        "GUID:b10624d713de0ea499050eed0b22b274"
+        "MeshToSDF"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

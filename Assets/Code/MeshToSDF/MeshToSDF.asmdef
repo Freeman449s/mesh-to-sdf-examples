@@ -1,6 +1,4 @@
 {
   "name": "MeshToSDF",
-  "references": [
-    "Src"
-  ]
+  "references": ["GUID:275c313c29d44d52b9f1feeb5e44a553"]
 }

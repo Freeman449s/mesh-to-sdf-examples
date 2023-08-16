@@ -28,7 +28,7 @@ namespace Code {
             if (_ticking) return false;
 
             _ticking = true;
-            _startTime = Time.unscaledTimeAsDouble;
+            _startTime = Time.realtimeSinceStartupAsDouble;
             return true;
         }
 
@@ -36,7 +36,7 @@ namespace Code {
             if (!_ticking) return false;
 
             _ticking = false;
-            _accumulatedTime += (Time.unscaledTimeAsDouble - _startTime);
+            _accumulatedTime += (Time.realtimeSinceStartupAsDouble - _startTime);
             _processCount += 1;
 
             _notificationCount += 1;

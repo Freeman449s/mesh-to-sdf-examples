@@ -170,11 +170,41 @@ If you need signed distance or just need a limited shell around your surface, us
 
     bool m_Initialized = false;
 
-    private ProcessTimer _processTimer;
+    private ProcessTimer _processTimer = new ProcessTimer(false);
 
     private void Start() {
-        _processTimer = new ProcessTimer(false);
         _processTimer.setRegularNotification(100);
+    }
+
+    private void Update() {
+        _processTimer.start();
+        
+        if (m_UpdateMode != UpdateMode.OnBeginFrame)
+            return;
+
+        if (Time.renderedFrameCount == m_LastFrame)
+            return;
+
+        if (m_CommandBuffer == null)
+            m_CommandBuffer = new CommandBuffer() { name = Labels.MeshToSDF };
+        else
+            m_CommandBuffer.Clear();
+        
+        RenderSDF(m_CommandBuffer);
+
+        Graphics.ExecuteCommandBuffer(m_CommandBuffer);
+
+        ReleaseGraphicsBuffer(ref m_VertexBuffer);
+        ReleaseGraphicsBuffer(ref m_IndexBuffer);
+        m_LastFrame = Time.renderedFrameCount;
+        
+        try {
+            _processTimer.updateAndPause();
+        }
+        catch (TimerNotificationException ex) {
+            Debug.Log(
+                $"Timer: {_processTimer.processCount()} processes, total time: {_processTimer.accumulatedTime()} s, avg time: {_processTimer.avgProcessTime() * 1000} ms.");
+        }
     }
 
     void Init() {
@@ -252,7 +282,7 @@ If you need signed distance or just need a limited shell around your surface, us
         }
         catch (TimerNotificationException ex) {
             Debug.Log(
-                $"Timer: {_processTimer.processCount().ToString()} processes, avg time: {(_processTimer.avgProcessTime()*1000).ToString()} ms.");
+                $"Timer: {_processTimer.processCount().ToString()} processes, avg time: {(_processTimer.avgProcessTime() * 1000).ToString()} ms.");
         }
 
         ReleaseGraphicsBuffer(ref m_VertexBuffer);
