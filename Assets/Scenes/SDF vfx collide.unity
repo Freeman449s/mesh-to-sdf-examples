@@ -691,32 +691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f34bde58152514d8cf7e7b2e7cc7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SDFTexture: {fileID: 1676366824}
-  m_FloodMode: 0
-  m_FloodFillQuality: 1
-  m_FloodFillIterations: 8
-  m_DistanceMode: 0
-  m_Offset: -0.03
-  m_UpdateMode: 0
-  m_Compute: {fileID: 7200000, guid: 21a034c7a3ab6be46873a82e0d02ec7b, type: 3}
-  m_SkinnedMeshRenderer: {fileID: 0}
-  m_MeshFilter: {fileID: 0}
-  m_InitializeKernel: -1
-  m_SplatTriangleDistancesSignedKernel: -1
-  m_SplatTriangleDistancesUnsignedKernel: -1
-  m_FinalizeKernel: -1
-  m_LinearFloodStepKernel: -1
-  m_LinearFloodStepUltraQualityKernel: -1
-  m_JumpFloodInitialize: -1
-  m_JumpFloodStep: -1
-  m_JumpFloodStepUltraQuality: -1
-  m_JumpFloodFinalize: -1
-  m_BufferToTextureCalcGradient: -1
-  m_VertexBufferStride: 0
-  m_VertexBufferPosAttributeOffset: 0
-  m_IndexFormat: 0
-  m_ThreadGroupCountTriangles: 0
-  m_Initialized: 0
 --- !u!4 &394792400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6289947803871073071, guid: f9f576f910be93947857c30992c416b7,
@@ -2512,11 +2486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8dd008eddf8fb24190dd13afed8fa97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SDF: {fileID: 8400000, guid: 186a9b0db03d8364a955d968347a1cc3, type: 2}
-  m_Size: {x: 0.88, y: 1.9, z: 1.03}
-  m_Resolution: 64
-  kMaxResolution: 2048
-  kMaxVoxelCount: 536870912
 --- !u!4 &1676366825
 Transform:
   m_ObjectHideFlags: 0
@@ -2545,8 +2514,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SDF: {fileID: 8400000, guid: 186a9b0db03d8364a955d968347a1cc3, type: 2}
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Resolution: 64
+  m_Size: {x: 0.88, y: 1.9, z: 1.03}
+  m_Resolution: 32
 --- !u!1 &1717973621
 GameObject:
   m_ObjectHideFlags: 0

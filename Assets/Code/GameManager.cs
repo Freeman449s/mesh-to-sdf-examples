@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        // 统计每帧平均时间
         _notificationCount++;
         if (_notificationCount >= notificationInterval) {
             _notificationCount = 0;
