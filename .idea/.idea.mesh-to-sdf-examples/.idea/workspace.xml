@@ -5,44 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ed6abcb-642a-4cb1-9349-0d29cad1a2fe" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.mesh-to-sdf-examples/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.mesh-to-sdf-examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_plastic.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Arms_rubber.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_plastic.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Legs_rubber.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Mask_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Mask_metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_plastic.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_Torso_rubber.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_plastic.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_head_rubber.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_mask.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_mask.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_monitors.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Adam_monitors.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Lens.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Lens.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Sclera.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_Sclera.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_blades.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_blades.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Eye_metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adam/Materials/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adam/Materials/Metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_matte.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_matte.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_smoother.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/Background_smoother.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/Materials/SDF deform.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/Materials/SDF deform.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/HDRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/HDRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/SDF Render Texture vfx collide.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/SDF Render Texture vfx collide.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-collide.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-collide.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-follow.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/vfx-sdf-follow.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mesh-to-sdf-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mesh-to-sdf-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/MeshToSDF/MeshToSDF.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MeshToSDF/MeshToSDF.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/MeshToSDF/Runtime/MeshToSDF.compute" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MeshToSDF/Runtime/MeshToSDF.compute" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/MeshToSDF/Runtime/MeshToSDF.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MeshToSDF/Runtime/MeshToSDF.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/MeshToSDF/_External/TressFXSDF.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MeshToSDF/_External/TressFXSDF.hlsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,25 +28,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Administrator\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Administrator\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="附加到 Unity 编辑器.附加到 Unity 编辑器">
     <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UnityEditor\2023.1.7f1c1\Editor\Unity.exe" />
@@ -131,6 +98,7 @@
       <workItem from="1692078364385" duration="22000" />
       <workItem from="1692078569756" duration="7986000" />
       <workItem from="1692104889469" duration="869000" />
+      <workItem from="1692156281832" duration="8280000" />
     </task>
     <servers />
   </component>

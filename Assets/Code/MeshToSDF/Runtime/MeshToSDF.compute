@@ -16,6 +16,7 @@ float INITIAL_DISTANCE;
 float4x4 _WorldToLocal;
 float _Offset;
 
+// 线程组的大小。Shader中的所有函数的线程组均被组织成 THREAD_GROUP_SIZE * 1 * 1
 #define THREAD_GROUP_SIZE 64
 
 ByteAddressBuffer _VertexBuffer;
@@ -36,8 +37,7 @@ uint GetIndex(uint i)
         return entryOffset == 1u ? ((read >> 16) & 0xffff) : read & 0xffff;
     }
     else
-        // 4 byte indices
-        return _IndexBuffer.Load(i << 2);
+        return _IndexBuffer.Load(i << 2); // 4 byte indices
 }
 
 float3 GetPos(uint i)
@@ -45,6 +45,12 @@ float3 GetPos(uint i)
     return asfloat(_VertexBuffer.Load3(i * _VertexBufferStride + _VertexBufferPosAttributeOffset));
 }
 
+/**
+ * \brief 获取线程对应的体素的1维索引
+ * \param GIndex 组内位移（1维）
+ * \param GId    线程组ID（3维）
+ * \return 线程对应的体素的1维索引
+ */
 int GetVoxelIndex(uint GIndex, uint3 GId)
 {
     return (GId.x + GId.y * _DispatchSizeX) * THREAD_GROUP_SIZE + GIndex;
@@ -98,7 +104,7 @@ int GetVoxelJump(int3 voxelCoords)
 void BufferToTexture(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 DTid : SV_DispatchThreadID)
 {
     int voxelIndex = GetVoxelIndex(GIndex, GId);
-    if(voxelIndex >= _VoxelResolution.w)
+    if (voxelIndex >= _VoxelResolution.w)
         return;
 
     int3 center = GetVoxelCoords(voxelIndex);
@@ -136,7 +142,7 @@ float MinDist(float currentDist, float adjacentDist, float step)
 void LinearFloodStep(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 DTid : SV_DispatchThreadID)
 {
     int voxelIndex = GetVoxelIndex(GIndex, GId);
-    if(voxelIndex >= _VoxelResolution.w)
+    if (voxelIndex >= _VoxelResolution.w)
         return;
 
     float centerValue = GetVoxel(voxelIndex);
@@ -167,7 +173,7 @@ void LinearFloodStep(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 
     minDist = MinDist(minDist, GetVoxel(center + offset.yxy), step);
     minDist = MinDist(minDist, GetVoxel(center + offset.yyx), step);
 
-#ifdef FLOOD_STEP_ULTRA_QUALITY
+    #ifdef FLOOD_STEP_ULTRA_QUALITY
     // 20 diagonally adjacent voxels
     step = SQRT_2 * g_CellSize;
     minDist = MinDist(minDist, GetVoxel(center + offset.xxy), step);
@@ -194,7 +200,7 @@ void LinearFloodStep(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 
     minDist = MinDist(minDist, GetVoxel(center + offset.zxz), step);
     minDist = MinDist(minDist, GetVoxel(center + offset.zzx), step);
     minDist = MinDist(minDist, GetVoxel(center + offset.zzz), step);
-#endif
+    #endif
 
     _SDFBufferRW[voxelIndex] = minDist;
 }
@@ -204,7 +210,7 @@ void LinearFloodStep(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 
 void JumpFloodInitialize(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 DTid : SV_DispatchThreadID)
 {
     int voxelIndex = GetVoxelIndex(GIndex, GId);
-    if(voxelIndex >= _VoxelResolution.w)
+    if (voxelIndex >= _VoxelResolution.w)
         return;
 
     float distance = GetVoxel(voxelIndex);
@@ -235,23 +241,23 @@ int3 _JumpOffsetInterleaved;
 void JumpFloodStep(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 DTid : SV_DispatchThreadID)
 {
     int voxelIndex = GetVoxelIndex(GIndex, GId);
-    if(voxelIndex >= _VoxelResolution.w)
+    if (voxelIndex >= _VoxelResolution.w)
         return;
 
     int3 centerCoord = GetVoxelCoords(voxelIndex);
     float bestDistance = 100000;
     int bestIndex = 0;
 
-#if FLOOD_STEP_ULTRA_QUALITY
+    #if FLOOD_STEP_ULTRA_QUALITY
     for(int z = -1; z <= 1; ++z)
         for(int y = -1; y <= 1; ++y)
             for(int x = -1; x <= 1; ++x)
                 JumpSample(centerCoord, int3(x, y, z) * _JumpOffset, bestDistance, bestIndex);
-#else
-    JumpSample(centerCoord,  0,                      bestDistance, bestIndex);
-    JumpSample(centerCoord,  _JumpOffsetInterleaved, bestDistance, bestIndex);
+    #else
+    JumpSample(centerCoord, 0, bestDistance, bestIndex);
+    JumpSample(centerCoord, _JumpOffsetInterleaved, bestDistance, bestIndex);
     JumpSample(centerCoord, -_JumpOffsetInterleaved, bestDistance, bestIndex);
-#endif
+    #endif
 
     _JumpBufferRW[voxelIndex] = bestIndex;
 }
@@ -261,11 +267,12 @@ void JumpFloodStep(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 DT
 void JumpFloodFinalize(uint GIndex : SV_GroupIndex, uint3 GId : SV_GroupID, uint3 DTid : SV_DispatchThreadID)
 {
     int voxelIndex = GetVoxelIndex(GIndex, GId);
-    if(voxelIndex >= _VoxelResolution.w)
+    if (voxelIndex >= _VoxelResolution.w)
         return;
 
     int closestSeedVoxelIndex = GetVoxelJump(voxelIndex);
-    float distanceToClosestSeedVoxel = length(GetVoxelCoords(voxelIndex) - GetVoxelCoords(closestSeedVoxelIndex)) * g_CellSize;
+    float distanceToClosestSeedVoxel = length(GetVoxelCoords(voxelIndex) - GetVoxelCoords(closestSeedVoxelIndex)) *
+        g_CellSize;
     float distanceOfClosestSeedVoxelToSurface = GetVoxel(closestSeedVoxelIndex);
 
     // Assuming unsigned distance, since signed has issues with jump flooding. With signed do

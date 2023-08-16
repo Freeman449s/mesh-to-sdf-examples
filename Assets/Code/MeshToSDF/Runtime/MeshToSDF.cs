@@ -1,4 +1,5 @@
 using System;
+using Code;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -169,6 +170,13 @@ If you need signed distance or just need a limited shell around your surface, us
 
     bool m_Initialized = false;
 
+    private ProcessTimer _processTimer;
+
+    private void Start() {
+        _processTimer = new ProcessTimer(false);
+        _processTimer.setRegularNotification(100);
+    }
+
     void Init() {
         if (m_Initialized)
             return;
@@ -233,9 +241,19 @@ If you need signed distance or just need a limited shell around your surface, us
         else
             m_CommandBuffer.Clear();
 
+        _processTimer.start();
+
         RenderSDF(m_CommandBuffer);
 
         Graphics.ExecuteCommandBuffer(m_CommandBuffer);
+
+        try {
+            _processTimer.updateAndPause();
+        }
+        catch (TimerNotificationException ex) {
+            Debug.Log(
+                $"Timer: {_processTimer.processCount().ToString()} processes, avg time: {(_processTimer.avgProcessTime()*1000).ToString()} ms.");
+        }
 
         ReleaseGraphicsBuffer(ref m_VertexBuffer);
         ReleaseGraphicsBuffer(ref m_IndexBuffer);
@@ -246,7 +264,7 @@ If you need signed distance or just need a limited shell around your surface, us
     void RenderSDF(CommandBuffer cmd) // 指令缓冲区存储了需要执行的指令的列表
     {
         float elapsedTime = Time.time; // 程序开始至今流逝的时间（单位：秒；暂停期间不计时）
-        
+
         if (m_SDFTexture == null || m_SDFTexture.mode != SDFTexture.Mode.Dynamic)
             return;
 
